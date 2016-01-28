@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+}
+.sc2 {
+	color: #008000;
+}
+.sc4 {
+	color: #FF8000;
+}
+.sc5 {
+	font-weight: bold;
+	color: #0000FF;
+}
+.sc6 {
+	color: #808080;
+}
+.sc9 {
+	color: #804000;
+}
+.sc10 {
+	font-weight: bold;
+	color: #000080;
+}
+.sc11 {
+}
+.sc16 {
+	color: #8000FF;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc2">//---------------------------------------------------------------------------
+</span><span class="sc9">#include &lt;windows.h&gt;
+</span><span class="sc2">//---------------------------------------------------------------------------
+</span><span class="sc9">#pragma argsused
+#include "MPQRepackerAPI.h"
+</span><span class="sc2">//---------------------------------------------------------------------------
+</span><span class="sc11">HINSTANCE</span><span class="sc0"> </span><span class="sc11">HInstance</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">NULL</span><span class="sc10">;</span><span class="sc0">
+</span><span class="sc2">//---------------------------------------------------------------------------
+</span><span class="sc9">#define DLLEXPORT extern "C" __declspec(dllexport)
+</span><span class="sc2">//---------------------------------------------------------------------------
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">DummySearch</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">API_WriteLog</span><span class="sc10">(</span><span class="sc6">"[SamplePlugin override]: Ïëàãèí êàãáå íàøåë ôàéëû âìåñòî ïðîãè"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc2">// Ïîäñêàçêà: Ïîñëå ýòîé ôóíêöèè ïðîãðàììà çàãðóçèò ñïèñîê ôàéëîâ èç
+</span><span class="sc0">    </span><span class="sc2">// %APPDATA%\MPQ Repacker\FILELIST_CACHE.txt
+</span><span class="sc0">    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">GetLastError</span><span class="sc10">();</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">DummyUnpack</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">API_WriteLog</span><span class="sc10">(</span><span class="sc6">"[SamplePlugin override]: À òåïåðü ðàñïàêîâàë"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc2">// Ïîäñêàçêà: ðàñïàêîâûâàòü ôàéëû íàäî âî âðåìåííóþ ïàïêó
+</span><span class="sc0">    </span><span class="sc2">// ïóòü ê êîòîðîé ìîæíî ïîëó÷èòü ñ ïîìîùüþ API-ôóíêöèè API_GetTempPath()
+</span><span class="sc0">    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">GetLastError</span><span class="sc10">();</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">DummyPack</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">API_WriteLog</span><span class="sc10">(</span><span class="sc6">"[SamplePlugin override]: È äàæå óïàêîâàë"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc2">// Ïîäñêàçêà: ïàêîâàòü ôàéëû íàäî èç âðåìåííîé ïàïêè API_GetTempPath()
+</span><span class="sc0">    </span><span class="sc2">// â ôàéë êàðòû, ïóòü ê êîòîðîé âîçðàùàåò API_GetDestMap()
+</span><span class="sc0">    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">GetLastError</span><span class="sc10">();</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">PluginLoad</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">API_WriteLog</span><span class="sc10">(</span><span class="sc6">"SamplePlugin 1.0 © ZxZ666"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc2">// Îâåððàéäû - çàìåíû ôóíêöèé
+</span><span class="sc0">    </span><span class="sc2">// Êîä îáðàáîòêè ôàéëîâ â ReceiveCode ïîìîãàåò ïðîãðàììå ðàáîòàòü,
+</span><span class="sc0">    </span><span class="sc2">// À â ôóíêöèÿõ-îâåððàéäàõ îí çàìåíÿåò ñîîòâåòñòâóþùèå ýòàïû ðàáîòû ïðîãðàììû
+</span><span class="sc0">    </span><span class="sc2">// Ò.å. ïîèñê, ðàñïàêîâêó, è óïàêîâêó
+</span><span class="sc0">    </span><span class="sc11">TOverrideInfo</span><span class="sc0"> </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">3</span><span class="sc10">];</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">0</span><span class="sc10">].</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">OVERRIDE_SEARCH</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">0</span><span class="sc10">].</span><span class="sc11">Function</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">DummySearch</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">0</span><span class="sc10">].</span><span class="sc11">hPlugin</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">HInstance</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc2">//////////////////////////////
+</span><span class="sc0">    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">1</span><span class="sc10">].</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">OVERRIDE_UNPACK</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">1</span><span class="sc10">].</span><span class="sc11">Function</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">DummyUnpack</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">1</span><span class="sc10">].</span><span class="sc11">hPlugin</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">HInstance</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc2">//////////////////////////////
+</span><span class="sc0">    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">2</span><span class="sc10">].</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">OVERRIDE_PACK</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">2</span><span class="sc10">].</span><span class="sc11">Function</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">DummyPack</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">2</span><span class="sc10">].</span><span class="sc11">hPlugin</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">HInstance</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc2">//////////////////////////////
+</span><span class="sc0">    </span><span class="sc11">API_RegisterOverride</span><span class="sc10">(</span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">0</span><span class="sc10">]);</span><span class="sc0">
+    </span><span class="sc11">API_RegisterOverride</span><span class="sc10">(</span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">1</span><span class="sc10">]);</span><span class="sc0">
+    </span><span class="sc11">API_RegisterOverride</span><span class="sc10">(</span><span class="sc11">inf</span><span class="sc10">[</span><span class="sc4">2</span><span class="sc10">]);</span><span class="sc0">
+    </span><span class="sc2">// Ñíèìàòü îâåððàéäû íå íàäî, ýòî ñäåëàåò ñàìà ïðîãðàììà åñëè âû
+</span><span class="sc0">    </span><span class="sc2">// Ïðàâèëüíî óêàçàëè hPlugin, à åñëè íåò - òî îâåððàéäû ïðîñòî
+</span><span class="sc0">    </span><span class="sc2">// Íå çàðåãèñòðèðóþòñÿ - ò.ê. ïðîãðàììà ïðîâåðÿåò ïðàâèëüíîñü hPlugin
+</span><span class="sc0">    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">GetLastError</span><span class="sc10">();</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">PluginUnload</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">API_WriteLog</span><span class="sc10">(</span><span class="sc6">"[ SamplePlugin unloaded ]"</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">GetLastError</span><span class="sc10">();</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc11">TPluginInfo</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">RegisterPlugin</span><span class="sc10">()</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">TPluginInfo</span><span class="sc0"> </span><span class="sc11">Result</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc11">Result</span><span class="sc10">.</span><span class="sc11">szName</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc6">"Sample plugin\0"</span><span class="sc10">;</span><span class="sc0">                                  </span><span class="sc2">// Íàçâàíèå ïëàãèíà
+</span><span class="sc0">    </span><span class="sc11">Result</span><span class="sc10">.</span><span class="sc11">szAuthor</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc6">"ZxZ666\0"</span><span class="sc10">;</span><span class="sc0">                                       </span><span class="sc2">// Àâòîð
+</span><span class="sc0">    </span><span class="sc11">Result</span><span class="sc10">.</span><span class="sc11">szDescription</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc6">"Ýòî íè÷åãî íå äåëàþùèé ïëàãèí-ïðèìåð.\n(íàæìèòå F1 ÷òîáû îòêðûòü àðõèâ ñ èñõîäíèêàìè)\0"</span><span class="sc10">;</span><span class="sc0">   </span><span class="sc2">// Îïèñàíèå
+</span><span class="sc0">    </span><span class="sc2">// Íàñòðîéêè ïðåðûâàíèé:
+</span><span class="sc0">    </span><span class="sc11">Result</span><span class="sc10">.</span><span class="sc11">bHookFileFind</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">true</span><span class="sc10">;</span><span class="sc0">    </span><span class="sc2">// CODE_FILE_SEARCH_START è CODE_FILE_SEARCH_END
+</span><span class="sc0">    </span><span class="sc11">Result</span><span class="sc10">.</span><span class="sc11">bHookFileUnpack</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">true</span><span class="sc10">;</span><span class="sc0">  </span><span class="sc2">// CODE_FILES_UNPACKED
+</span><span class="sc0">    </span><span class="sc11">Result</span><span class="sc10">.</span><span class="sc11">bHookFilePack</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">true</span><span class="sc10">;</span><span class="sc0">    </span><span class="sc2">// CODE_FILES_PACKED
+</span><span class="sc0">    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">Result</span><span class="sc10">;</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">DLLEXPORT</span><span class="sc0"> </span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">CALLBACK</span><span class="sc0"> </span><span class="sc11">ReceiveCode</span><span class="sc10">(</span><span class="sc16">int</span><span class="sc0"> </span><span class="sc11">Code</span><span class="sc10">)</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc16">char</span><span class="sc0"> </span><span class="sc11">szSourceMap</span><span class="sc10">[</span><span class="sc11">MAX_PATH</span><span class="sc10">],</span><span class="sc0"> </span><span class="sc11">szDestMap</span><span class="sc10">[</span><span class="sc11">MAX_PATH</span><span class="sc10">],</span><span class="sc0"> </span><span class="sc11">szTempDir</span><span class="sc10">[</span><span class="sc11">MAX_PATH</span><span class="sc10">],</span><span class="sc0"> </span><span class="sc11">szAppDataDir</span><span class="sc10">[</span><span class="sc11">MAX_PATH</span><span class="sc10">];</span><span class="sc0">
+    </span><span class="sc11">API_GetSourceMap</span><span class="sc10">(</span><span class="sc11">szSourceMap</span><span class="sc10">);</span><span class="sc0">      </span><span class="sc2">// Ïóòü äî èñõîäíîé êàðòû
+</span><span class="sc0">    </span><span class="sc11">API_GetDestMap</span><span class="sc10">(</span><span class="sc11">szDestMap</span><span class="sc10">);</span><span class="sc0">          </span><span class="sc2">// Ïóòü äî ðåçóëüòàòà (êóäà áóäåò ñîõðàíåíà ïåðåïàêîâàííàÿ êàðòà)
+</span><span class="sc0">    </span><span class="sc11">API_GetTempPath</span><span class="sc10">(</span><span class="sc11">szTempDir</span><span class="sc10">);</span><span class="sc0">         </span><span class="sc2">// Ïóòü äî óêàçàííîé â íàñòðîéêàõ âðåìåííîé ïàïêè
+</span><span class="sc0">    </span><span class="sc11">API_GetAppDataPath</span><span class="sc10">(</span><span class="sc11">szAppDataDir</span><span class="sc10">);</span><span class="sc0">   </span><span class="sc2">// Ïóòü äî ïàïêè %APPDATA%\MPQ Repacker\ - òàì õðàíÿòñÿ ïëàãèíû, ÷èò-ïàêè, íàñòðîéêè è âðåìåííûé ôàéë-ëèñò FILELIST_CACHE.txt
+</span><span class="sc0">    </span><span class="sc5">if</span><span class="sc10">(</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">==</span><span class="sc0"> </span><span class="sc11">CODE_FILE_SEARCH_START</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc11">MessageBox</span><span class="sc10">(</span><span class="sc5">NULL</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"Íà÷àëî ïîèñêà èìåí ôàéëîâ"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"SamplePlugin"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">MB_ICONINFORMATION</span><span class="sc0"> </span><span class="sc10">|</span><span class="sc0"> </span><span class="sc11">MB_OK</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc5">if</span><span class="sc10">(</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">==</span><span class="sc0"> </span><span class="sc11">CODE_FILE_SEARCH_END</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc11">MessageBox</span><span class="sc10">(</span><span class="sc5">NULL</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"Êîíåö ïîèñêà ôàéëîâ\n(ìîæíî ìîäèôèöèðîâàòü %APPDATA%\\MPQ Repacker\\FILELIST_CACHE.txt - ïðîãðàììà åãî ïåðåçàãðóçèò)"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"SamplePlugin"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">MB_ICONINFORMATION</span><span class="sc0"> </span><span class="sc10">|</span><span class="sc0"> </span><span class="sc11">MB_OK</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc5">if</span><span class="sc10">(</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">==</span><span class="sc0"> </span><span class="sc11">CODE_FILES_UNPACKED</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc11">MessageBox</span><span class="sc10">(</span><span class="sc5">NULL</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"Ôàéëû ðàñïàêîâàíû âî âðåìåííóþ ïàïêó\n(èõ ìîæíî ìîäèôèöèðîâàòü èç ïëàãèíà ñåé÷àñ)"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"SamplePlugin"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">MB_ICONINFORMATION</span><span class="sc0"> </span><span class="sc10">|</span><span class="sc0"> </span><span class="sc11">MB_OK</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc5">if</span><span class="sc10">(</span><span class="sc11">Code</span><span class="sc0"> </span><span class="sc10">==</span><span class="sc0"> </span><span class="sc11">CODE_FILES_PACKED</span><span class="sc10">)</span><span class="sc0"> </span><span class="sc11">MessageBox</span><span class="sc10">(</span><span class="sc5">NULL</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"Ôàéëû óïàêîâàíû â MPQ àðõèâ\n(ñåé÷àñ åãî ìîæíî îïòèìèçèðîâàòü)"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc6">"SamplePlugin"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">MB_ICONINFORMATION</span><span class="sc0"> </span><span class="sc10">|</span><span class="sc0"> </span><span class="sc11">MB_OK</span><span class="sc10">);</span><span class="sc0">
+    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc11">GetLastError</span><span class="sc10">();</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc11">BOOL</span><span class="sc0"> </span><span class="sc11">WINAPI</span><span class="sc0"> </span><span class="sc11">DllMain</span><span class="sc10">(</span><span class="sc11">HINSTANCE</span><span class="sc0"> </span><span class="sc11">hinstDLL</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">DWORD</span><span class="sc0"> </span><span class="sc11">fwdreason</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">LPVOID</span><span class="sc0"> </span><span class="sc11">lpvReserved</span><span class="sc10">)</span><span class="sc0">
+</span><span class="sc10">{</span><span class="sc0">
+    </span><span class="sc11">HInstance</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">hinstDLL</span><span class="sc10">;</span><span class="sc0">
+    </span><span class="sc2">// Ëó÷øå íå ïèñàòü çäåñü íè÷åãî, äëÿ ýòîãî åñòü ôóíêöèè PluginLoad() è PluginUnload().
+</span><span class="sc0">    </span><span class="sc2">// DllMain(DLL_PROCESS_ATTACH) âûçûâàåòñÿ íå òîëüêî ïðè âêëþ÷åíèè ïëàãèíà,
+</span><span class="sc0">    </span><span class="sc2">// íî è ïðè çàãðóçêå äëÿ ïîëó÷åíèÿ èíôîðìàöèè î í¸ì (RegisterPlugin),
+</span><span class="sc0">    </span><span class="sc2">// à PluginLoad/PluginUnload âûçûâàþòñÿ ñîîòâåòñòâåííî òîëüêî ïðè âêëþ÷åíèè/âûêëþ÷åíèè
+</span><span class="sc0">    </span><span class="sc5">return</span><span class="sc0"> </span><span class="sc4">1</span><span class="sc10">;</span><span class="sc0">
+</span><span class="sc10">}</span><span class="sc0">
+</span><span class="sc2">//---------------------------------------------------------------------------
+</span></div></body>
+</html>

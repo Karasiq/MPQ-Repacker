@@ -1,0 +1,120 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{2E2D79D3-B325-4AB4-9CB8-EE8ED7029517}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="MPQRepacker.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\Silk recover\SLKRecover.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\Sample\SamplePlugin.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\CheatpackFinder\CheatpackFinder.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\ScriptAutoreplace\ScriptAutoreplace.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\UnSpazzler\UnSpazzler.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\CheatInjector\CheatInjector.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Plugins\PatchW3I\PatchW3I.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="MPQRepacker">
+			<MSBuild Projects="MPQRepacker.cbproj"/>
+		</Target>
+		<Target Name="MPQRepacker:Clean">
+			<MSBuild Targets="Clean" Projects="MPQRepacker.cbproj"/>
+		</Target>
+		<Target Name="MPQRepacker:Make">
+			<MSBuild Targets="Make" Projects="MPQRepacker.cbproj"/>
+		</Target>
+		<Target Name="SLKRecover">
+			<MSBuild Projects="Plugins\Silk recover\SLKRecover.cbproj"/>
+		</Target>
+		<Target Name="SLKRecover:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\Silk recover\SLKRecover.cbproj"/>
+		</Target>
+		<Target Name="SLKRecover:Make">
+			<MSBuild Targets="Make" Projects="Plugins\Silk recover\SLKRecover.cbproj"/>
+		</Target>
+		<Target Name="SamplePlugin">
+			<MSBuild Projects="Plugins\Sample\SamplePlugin.cbproj"/>
+		</Target>
+		<Target Name="SamplePlugin:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\Sample\SamplePlugin.cbproj"/>
+		</Target>
+		<Target Name="SamplePlugin:Make">
+			<MSBuild Targets="Make" Projects="Plugins\Sample\SamplePlugin.cbproj"/>
+		</Target>
+		<Target Name="CheatpackFinder">
+			<MSBuild Projects="Plugins\CheatpackFinder\CheatpackFinder.cbproj"/>
+		</Target>
+		<Target Name="CheatpackFinder:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\CheatpackFinder\CheatpackFinder.cbproj"/>
+		</Target>
+		<Target Name="CheatpackFinder:Make">
+			<MSBuild Targets="Make" Projects="Plugins\CheatpackFinder\CheatpackFinder.cbproj"/>
+		</Target>
+		<Target Name="ScriptAutoreplace">
+			<MSBuild Projects="Plugins\ScriptAutoreplace\ScriptAutoreplace.cbproj"/>
+		</Target>
+		<Target Name="ScriptAutoreplace:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\ScriptAutoreplace\ScriptAutoreplace.cbproj"/>
+		</Target>
+		<Target Name="ScriptAutoreplace:Make">
+			<MSBuild Targets="Make" Projects="Plugins\ScriptAutoreplace\ScriptAutoreplace.cbproj"/>
+		</Target>
+		<Target Name="UnSpazzler">
+			<MSBuild Projects="Plugins\UnSpazzler\UnSpazzler.cbproj"/>
+		</Target>
+		<Target Name="UnSpazzler:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\UnSpazzler\UnSpazzler.cbproj"/>
+		</Target>
+		<Target Name="UnSpazzler:Make">
+			<MSBuild Targets="Make" Projects="Plugins\UnSpazzler\UnSpazzler.cbproj"/>
+		</Target>
+		<Target Name="CheatInjector">
+			<MSBuild Projects="Plugins\CheatInjector\CheatInjector.cbproj"/>
+		</Target>
+		<Target Name="CheatInjector:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\CheatInjector\CheatInjector.cbproj"/>
+		</Target>
+		<Target Name="CheatInjector:Make">
+			<MSBuild Targets="Make" Projects="Plugins\CheatInjector\CheatInjector.cbproj"/>
+		</Target>
+		<Target Name="PatchW3I">
+			<MSBuild Projects="Plugins\PatchW3I\PatchW3I.cbproj"/>
+		</Target>
+		<Target Name="PatchW3I:Clean">
+			<MSBuild Targets="Clean" Projects="Plugins\PatchW3I\PatchW3I.cbproj"/>
+		</Target>
+		<Target Name="PatchW3I:Make">
+			<MSBuild Targets="Make" Projects="Plugins\PatchW3I\PatchW3I.cbproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="MPQRepacker;SLKRecover;SamplePlugin;CheatpackFinder;ScriptAutoreplace;UnSpazzler;CheatInjector;PatchW3I"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="MPQRepacker:Clean;SLKRecover:Clean;SamplePlugin:Clean;CheatpackFinder:Clean;ScriptAutoreplace:Clean;UnSpazzler:Clean;CheatInjector:Clean;PatchW3I:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="MPQRepacker:Make;SLKRecover:Make;SamplePlugin:Make;CheatpackFinder:Make;ScriptAutoreplace:Make;UnSpazzler:Make;CheatInjector:Make;PatchW3I:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

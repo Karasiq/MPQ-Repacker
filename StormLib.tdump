@@ -1,0 +1,657 @@
+Turbo Dump  Version 6.3.0.0 Copyright (c) 1988-2009 Embarcadero Technologies, Inc.
+               Display of File f:\personal data\my documents\rad studio\projects\war3 map repacker\stormlib.lib
+
+000000 MSLIBR Index begins at file offset 1200. Index is 3 blocks.
+
+000010 THEADR  SCompCompress
+000022 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SCompCompress
+      Module Name: StormLib.dll
+      ordinal: 1
+000047 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:0
+000050 MODEND
+
+===============
+
+000060 THEADR  SCompDecompress
+000074 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SCompDecompress
+      Module Name: StormLib.dll
+      ordinal: 2
+00009B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:1
+0000A4 MODEND
+
+===============
+
+0000B0 THEADR  SCompExplode
+0000C1 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SCompExplode
+      Module Name: StormLib.dll
+      ordinal: 3
+0000E5 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:2
+0000EE MODEND
+
+===============
+
+000100 THEADR  SCompImplode
+000111 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SCompImplode
+      Module Name: StormLib.dll
+      ordinal: 4
+000135 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:3
+00013E MODEND
+
+===============
+
+000150 THEADR  SFileAddFile
+000161 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileAddFile
+      Module Name: StormLib.dll
+      ordinal: 5
+000185 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:4
+00018E MODEND
+
+===============
+
+0001A0 THEADR  SFileAddFileEx
+0001B3 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileAddFileEx
+      Module Name: StormLib.dll
+      ordinal: 6
+0001D9 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:5
+0001E2 MODEND
+
+===============
+
+0001F0 THEADR  SFileAddListFile
+000205 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileAddListFile
+      Module Name: StormLib.dll
+      ordinal: 7
+00022D COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:6
+000236 MODEND
+
+===============
+
+000240 THEADR  SFileAddWave
+000251 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileAddWave
+      Module Name: StormLib.dll
+      ordinal: 8
+000275 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:7
+00027E MODEND
+
+===============
+
+000290 THEADR  SFileCloseArchive
+0002A6 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileCloseArchive
+      Module Name: StormLib.dll
+      ordinal: 9
+0002CF COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:8
+0002D8 MODEND
+
+===============
+
+0002E0 THEADR  SFileCloseFile
+0002F3 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileCloseFile
+      Module Name: StormLib.dll
+      ordinal: 10
+000319 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:9
+000322 MODEND
+
+===============
+
+000330 THEADR  SFileCompactArchive
+000348 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileCompactArchive
+      Module Name: StormLib.dll
+      ordinal: 11
+000373 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:10
+00037C MODEND
+
+===============
+
+000390 THEADR  SFileCreateArchive
+0003A7 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileCreateArchive
+      Module Name: StormLib.dll
+      ordinal: 12
+0003D1 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:11
+0003DA MODEND
+
+===============
+
+0003E0 THEADR  SFileCreateFile
+0003F4 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileCreateFile
+      Module Name: StormLib.dll
+      ordinal: 13
+00041B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:12
+000424 MODEND
+
+===============
+
+000430 THEADR  SFileEnumLocales
+000445 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileEnumLocales
+      Module Name: StormLib.dll
+      ordinal: 14
+00046D COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:13
+000476 MODEND
+
+===============
+
+000480 THEADR  SFileExtractFile
+000495 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileExtractFile
+      Module Name: StormLib.dll
+      ordinal: 15
+0004BD COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:14
+0004C6 MODEND
+
+===============
+
+0004D0 THEADR  SFileFindClose
+0004E3 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileFindClose
+      Module Name: StormLib.dll
+      ordinal: 16
+000509 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:15
+000512 MODEND
+
+===============
+
+000520 THEADR  SFileFindFirstFile
+000537 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileFindFirstFile
+      Module Name: StormLib.dll
+      ordinal: 17
+000561 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:16
+00056A MODEND
+
+===============
+
+000570 THEADR  SFileFindNextFile
+000586 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileFindNextFile
+      Module Name: StormLib.dll
+      ordinal: 18
+0005AF COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:17
+0005B8 MODEND
+
+===============
+
+0005C0 THEADR  SFileFinishFile
+0005D4 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileFinishFile
+      Module Name: StormLib.dll
+      ordinal: 19
+0005FB COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:18
+000604 MODEND
+
+===============
+
+000610 THEADR  SFileFlushArchive
+000626 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileFlushArchive
+      Module Name: StormLib.dll
+      ordinal: 20
+00064F COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:19
+000658 MODEND
+
+===============
+
+000660 THEADR  SFileGetAttributes
+000677 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileGetAttributes
+      Module Name: StormLib.dll
+      ordinal: 21
+0006A1 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:20
+0006AA MODEND
+
+===============
+
+0006B0 THEADR  SFileGetFileInfo
+0006C5 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileGetFileInfo
+      Module Name: StormLib.dll
+      ordinal: 22
+0006ED COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:21
+0006F6 MODEND
+
+===============
+
+000700 THEADR  SFileGetFileName
+000715 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileGetFileName
+      Module Name: StormLib.dll
+      ordinal: 23
+00073D COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:22
+000746 MODEND
+
+===============
+
+000750 THEADR  SFileGetFileSize
+000765 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileGetFileSize
+      Module Name: StormLib.dll
+      ordinal: 24
+00078D COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:23
+000796 MODEND
+
+===============
+
+0007A0 THEADR  SFileGetGlobalFlags
+0007B8 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileGetGlobalFlags
+      Module Name: StormLib.dll
+      ordinal: 25
+0007E3 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:24
+0007EC MODEND
+
+===============
+
+000800 THEADR  SFileGetLocale
+000813 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileGetLocale
+      Module Name: StormLib.dll
+      ordinal: 26
+000839 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:25
+000842 MODEND
+
+===============
+
+000850 THEADR  SFileHasFile
+000861 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileHasFile
+      Module Name: StormLib.dll
+      ordinal: 27
+000885 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:26
+00088E MODEND
+
+===============
+
+0008A0 THEADR  SFileIsPatchedArchive
+0008BA COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileIsPatchedArchive
+      Module Name: StormLib.dll
+      ordinal: 28
+0008E7 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:27
+0008F0 MODEND
+
+===============
+
+000900 THEADR  SFileOpenArchive
+000915 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileOpenArchive
+      Module Name: StormLib.dll
+      ordinal: 29
+00093D COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:28
+000946 MODEND
+
+===============
+
+000950 THEADR  SFileOpenFileEx
+000964 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileOpenFileEx
+      Module Name: StormLib.dll
+      ordinal: 30
+00098B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:29
+000994 MODEND
+
+===============
+
+0009A0 THEADR  SFileOpenPatchArchive
+0009BA COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileOpenPatchArchive
+      Module Name: StormLib.dll
+      ordinal: 31
+0009E7 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:30
+0009F0 MODEND
+
+===============
+
+000A00 THEADR  SFileReadFile
+000A12 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileReadFile
+      Module Name: StormLib.dll
+      ordinal: 32
+000A37 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:31
+000A40 MODEND
+
+===============
+
+000A50 THEADR  SFileRemoveFile
+000A64 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileRemoveFile
+      Module Name: StormLib.dll
+      ordinal: 33
+000A8B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:32
+000A94 MODEND
+
+===============
+
+000AA0 THEADR  SFileRenameFile
+000AB4 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileRenameFile
+      Module Name: StormLib.dll
+      ordinal: 34
+000ADB COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:33
+000AE4 MODEND
+
+===============
+
+000AF0 THEADR  SFileSetAddFileCallback
+000B0C COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetAddFileCallback
+      Module Name: StormLib.dll
+      ordinal: 35
+000B3B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:34
+000B44 MODEND
+
+===============
+
+000B50 THEADR  SFileSetAttributes
+000B67 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetAttributes
+      Module Name: StormLib.dll
+      ordinal: 36
+000B91 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:35
+000B9A MODEND
+
+===============
+
+000BA0 THEADR  SFileSetCompactCallback
+000BBC COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetCompactCallback
+      Module Name: StormLib.dll
+      ordinal: 37
+000BEB COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:36
+000BF4 MODEND
+
+===============
+
+000C00 THEADR  SFileSetDataCompression
+000C1C COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetDataCompression
+      Module Name: StormLib.dll
+      ordinal: 38
+000C4B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:37
+000C54 MODEND
+
+===============
+
+000C60 THEADR  SFileSetFileLocale
+000C77 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetFileLocale
+      Module Name: StormLib.dll
+      ordinal: 39
+000CA1 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:38
+000CAA MODEND
+
+===============
+
+000CB0 THEADR  SFileSetFilePointer
+000CC8 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetFilePointer
+      Module Name: StormLib.dll
+      ordinal: 40
+000CF3 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:39
+000CFC MODEND
+
+===============
+
+000D10 THEADR  SFileSetGlobalFlags
+000D28 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetGlobalFlags
+      Module Name: StormLib.dll
+      ordinal: 41
+000D53 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:40
+000D5C MODEND
+
+===============
+
+000D70 THEADR  SFileSetLocale
+000D83 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetLocale
+      Module Name: StormLib.dll
+      ordinal: 42
+000DA9 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:41
+000DB2 MODEND
+
+===============
+
+000DC0 THEADR  SFileSetMaxFileCount
+000DD9 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileSetMaxFileCount
+      Module Name: StormLib.dll
+      ordinal: 43
+000E05 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:42
+000E0E MODEND
+
+===============
+
+000E20 THEADR  SFileUpdateFileAttributes
+000E3E COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileUpdateFileAttributes
+      Module Name: StormLib.dll
+      ordinal: 44
+000E6F COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:43
+000E78 MODEND
+
+===============
+
+000E80 THEADR  SFileVerifyArchive
+000E97 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileVerifyArchive
+      Module Name: StormLib.dll
+      ordinal: 45
+000EC1 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:44
+000ECA MODEND
+
+===============
+
+000ED0 THEADR  SFileVerifyFile
+000EE4 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileVerifyFile
+      Module Name: StormLib.dll
+      ordinal: 46
+000F0B COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:45
+000F14 MODEND
+
+===============
+
+000F20 THEADR  SFileWriteFile
+000F33 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SFileWriteFile
+      Module Name: StormLib.dll
+      ordinal: 47
+000F59 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:46
+000F62 MODEND
+
+===============
+
+000F70 THEADR  SListFileFindClose
+000F87 COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SListFileFindClose
+      Module Name: StormLib.dll
+      ordinal: 48
+000FB1 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:47
+000FBA MODEND
+
+===============
+
+000FC0 THEADR  SListFileFindFirstFile
+000FDB COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SListFileFindFirstFile
+      Module Name: StormLib.dll
+      ordinal: 49
+001009 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:48
+001012 MODEND
+
+===============
+
+001020 THEADR  SListFileFindNextFile
+00103A COMENT  Purge: Yes, List: Yes, Class: 160 (0A0h), SubClass: 1 (01h)
+    Dynamic link import (IMPDEF)
+      Imported by: ordinal
+      Internal Name: SListFileFindNextFile
+      Module Name: StormLib.dll
+      ordinal: 50
+001067 COMENT  Purge: Yes, List: Yes, Class: 251 (0FBh), SubClass: 3 (03h)
+    Hint:49
+001070 MODEND
+
+===============
+
+001080 MSLEND
+

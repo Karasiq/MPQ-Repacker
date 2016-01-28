@@ -1,0 +1,9 @@
+*.exe
+*.bat
+*.7z
+*.zip
+Debug
+Release
+Stable
+PluginPack
+Backups
